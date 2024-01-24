@@ -101,6 +101,12 @@ function init() {
     handleGivenWordSubmit(givenWordInput, scoreP, failInfo)
   );
   givenWordSubmit.parent(givenWordInputBox);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      handleGivenWordSubmit(givenWordInput, scoreP, failInfo);
+    }
+  });
 }
 
 let failTimeout;
