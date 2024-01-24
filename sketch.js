@@ -114,7 +114,7 @@ function handleGivenWordSubmit(input, scoreP, failInfo) {
     score++;
     scoreP.html(`Points: ${score}`);
     scoreP.style("color", "green");
-    setTimeout = setTimeout(() => {
+    setTimeout(() => {
       scoreP.style("color", "black");
     }, 1000);
   } else {
